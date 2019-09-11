@@ -1,5 +1,5 @@
 //
-//  HomeViewModel.swift
+//  CCViewModel.swift
 //  cableclima
 //
 //  Created by Matias David Schwalb on 10/09/2019.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-class HomeViewModel: CCViewModel {
+class CCViewModel {
     
 }
