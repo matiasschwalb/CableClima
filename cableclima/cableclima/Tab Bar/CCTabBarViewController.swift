@@ -10,11 +10,6 @@ import UIKit
 
 class CCTabBarController: UITabBarController {
     
-    override func viewWillAppear(_ animated: Bool) {
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font:UIFont.boldSystemFont(ofSize: 17)], for: .selected)
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font:UIFont.systemFont(ofSize: 17)], for: .normal)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,13 +18,13 @@ class CCTabBarController: UITabBarController {
         let home = CCTabs(withType: .home)
         let forecast = CCTabs(withType: .forecast)
         let settings = CCTabs(withType: .settings)
+        let cities = CCTabs(withType: .cities)
         
-        viewControllers = [home.viewController, forecast.viewController, settings.viewController] as? [UIViewController]
+        viewControllers = [home.navigationController, forecast.navigationController, cities.navigationController, settings.navigationController] as? [UIViewController]
     }
     
     private func setupAppearence() {
         UITabBar.appearance().tintColor = UIColor.ccRed
-        
     }
 }
 

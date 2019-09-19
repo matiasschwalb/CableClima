@@ -19,12 +19,16 @@ class CCTabs {
     
     var viewController: CCViewController?
     
+    var navigationController: UINavigationController?
+    
     var image: UIImage? {
         switch type {
         case .home:
             return UIImage(named: "weather")
         case .forecast:
             return UIImage(named: "forecast")
+        case .cities:
+            return UIImage(named: "map")
         case .settings:
             return UIImage(named: "settings")
         default:
@@ -38,6 +42,8 @@ class CCTabs {
             return UIImage(named: "weather-filled")
         case .forecast:
             return UIImage(named: "forecast-filled")
+        case .cities:
+            return UIImage(named: "map-filled")
         case .settings:
             return UIImage(named: "settings-filled")
         default:
@@ -51,6 +57,8 @@ class CCTabs {
             return "tab_bar.home.title".localized()
         case .forecast:
             return "tab_bar.forecast.title".localized()
+        case .cities:
+            return "tab_bar.cities.title".localized()
         case .settings:
             return "tab_bar.settings.title".localized()
         default:
@@ -64,8 +72,10 @@ class CCTabs {
             return 0
         case .forecast:
             return 1
-        case .settings:
+        case .cities:
             return 2
+        case .settings:
+            return 3
         }
     }
     
@@ -83,6 +93,9 @@ class CCTabs {
         viewController?.tabBarItem.image = image
         viewController?.tabBarItem.selectedImage = selectedImage
         viewController?.tabBarItem.tag = tag
+        viewController?.title = title
+        
+        navigationController = UINavigationController(rootViewController: viewController ?? CCViewController())
     }
 }
 
@@ -90,4 +103,5 @@ enum CCTabType {
     case home
     case forecast
     case settings
+    case cities
 }

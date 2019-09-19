@@ -17,6 +17,7 @@
 		40065B6A232872F8004984CA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40065B69232872F8004984CA /* Localizable.strings */; };
 		40065B6C2328739D004984CA /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40065B6B2328739D004984CA /* String.swift */; };
 		4060DAC62332FBF0001E859A /* CCTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060DAC52332FBF0001E859A /* CCTabs.swift */; };
+		4060DACB2332FF26001E859A /* CCNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060DACA2332FF26001E859A /* CCNavigationBar.swift */; };
 		40A6128523285E3C002BEC7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A6128423285E3C002BEC7F /* AppDelegate.swift */; };
 		40A6128723285E3C002BEC7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A6128623285E3C002BEC7F /* ViewController.swift */; };
 		40A6128C23285E3D002BEC7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A6128B23285E3D002BEC7F /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		40065B69232872F8004984CA /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		40065B6B2328739D004984CA /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		4060DAC52332FBF0001E859A /* CCTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTabs.swift; sourceTree = "<group>"; };
+		4060DACA2332FF26001E859A /* CCNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCNavigationBar.swift; sourceTree = "<group>"; };
 		40A6128123285E3C002BEC7F /* cableclima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cableclima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A6128423285E3C002BEC7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40A6128623285E3C002BEC7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 			path = "Tab Bar";
 			sourceTree = "<group>";
 		};
+		4060DAC72332FD69001E859A /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				4060DACA2332FF26001E859A /* CCNavigationBar.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		40A6127823285E3C002BEC7F = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 		40A6128323285E3C002BEC7F /* cableclima */ = {
 			isa = PBXGroup;
 			children = (
+				4060DAC72332FD69001E859A /* Navigation */,
 				40065B662328718F004984CA /* Tab Bar */,
 				40065B6323286DD0004984CA /* Extensions */,
 				40065B5D23286763004984CA /* Base */,
@@ -205,6 +216,7 @@
 				40065B5623286405004984CA /* HomeViewController.swift in Sources */,
 				40065B6123286928004984CA /* CCViewModel.swift in Sources */,
 				40065B5923286411004984CA /* HomeViewModel.swift in Sources */,
+				4060DACB2332FF26001E859A /* CCNavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
