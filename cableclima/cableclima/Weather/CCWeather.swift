@@ -15,9 +15,9 @@ class CCWeather {
     let description: String?
     let icon: UIImage?
     
-    init(id: Int, main: CCMainWeather, description: String, icon: UIImage) {
+    init(id: Int, type: WeatherType?, pressure: Int?, humidity: Int?, currentTemperature: Float?, maxTemperature: Float?, minTemperature: Float?,  description: String?, icon: UIImage?) {
         self.id = id
-        self.main = main
+        self.main = CCMainWeather(type: type, pressure: pressure, humidity: humidity, currentTemperature: currentTemperature, maxTemperature: maxTemperature, minTemperature: minTemperature) 
         self.description = description
         self.icon = icon
     }
