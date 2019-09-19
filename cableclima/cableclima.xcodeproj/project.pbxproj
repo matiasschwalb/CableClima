@@ -16,6 +16,7 @@
 		40065B68232871F6004984CA /* CCTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40065B67232871F6004984CA /* CCTabBarViewController.swift */; };
 		40065B6A232872F8004984CA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40065B69232872F8004984CA /* Localizable.strings */; };
 		40065B6C2328739D004984CA /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40065B6B2328739D004984CA /* String.swift */; };
+		4060DAC62332FBF0001E859A /* CCTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060DAC52332FBF0001E859A /* CCTabs.swift */; };
 		40A6128523285E3C002BEC7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A6128423285E3C002BEC7F /* AppDelegate.swift */; };
 		40A6128723285E3C002BEC7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A6128623285E3C002BEC7F /* ViewController.swift */; };
 		40A6128C23285E3D002BEC7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A6128B23285E3D002BEC7F /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		40065B67232871F6004984CA /* CCTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTabBarViewController.swift; sourceTree = "<group>"; };
 		40065B69232872F8004984CA /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		40065B6B2328739D004984CA /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		4060DAC52332FBF0001E859A /* CCTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTabs.swift; sourceTree = "<group>"; };
 		40A6128123285E3C002BEC7F /* cableclima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cableclima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A6128423285E3C002BEC7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40A6128623285E3C002BEC7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				40065B67232871F6004984CA /* CCTabBarViewController.swift */,
+				4060DAC52332FBF0001E859A /* CCTabs.swift */,
 			);
 			path = "Tab Bar";
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40065B68232871F6004984CA /* CCTabBarViewController.swift in Sources */,
+				4060DAC62332FBF0001E859A /* CCTabs.swift in Sources */,
 				40065B5F23286773004984CA /* CCViewController.swift in Sources */,
 				40065B6523286DD8004984CA /* UIColor.swift in Sources */,
 				40065B6C2328739D004984CA /* String.swift in Sources */,
