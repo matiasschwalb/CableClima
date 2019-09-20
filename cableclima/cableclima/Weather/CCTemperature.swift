@@ -30,6 +30,10 @@ class CCTemperature {
         self.type = type
         self.unit = unit
     }
+    
+    func formattedTemperature() -> String {
+        return "\(Int(value))\(unit.rawValue)"
+    }
 }
 
 enum TemperatureType {

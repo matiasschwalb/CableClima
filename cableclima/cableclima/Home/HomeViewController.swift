@@ -10,9 +10,31 @@ import UIKit
 
 class HomeViewController: CCViewController {
 
+    @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var countryLabel: UILabel!
+    @IBOutlet weak var weatherImage: UIImageView!
+    @IBOutlet weak var currentTemperatureLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var detailsView: UIView!
+    
     let viewModel: HomeViewModel = HomeViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+        setupSubView()
+    }
+    
+    private func setupUI() {
+        
+        view.backgroundColor = viewModel.backgroundColor
+        
+        currentTemperatureLabel.text = viewModel.currentTemperature.formattedTemperature()
+        
+    }
+    
+    private func setupSubView() {
+        let detailsView = CCHomeDetailsView()
+        detailsView.addChild(detailsView)
     }
 }
