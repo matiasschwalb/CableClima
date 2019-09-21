@@ -30,6 +30,9 @@
 		40A6128723285E3C002BEC7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A6128623285E3C002BEC7F /* ViewController.swift */; };
 		40A6128C23285E3D002BEC7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A6128B23285E3D002BEC7F /* Assets.xcassets */; };
 		40A6128F23285E3D002BEC7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A6128D23285E3D002BEC7F /* LaunchScreen.storyboard */; };
+		40C2C15B23368BE40083D128 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2C15A23368BE40083D128 /* General.swift */; };
+		40C2C15D23368C440083D128 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2C15C23368C440083D128 /* Bundle.swift */; };
+		40C2C15F23368CD40083D128 /* CCHomeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2C15E23368CD40083D128 /* CCHomeDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		40A6128B23285E3D002BEC7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40A6128E23285E3D002BEC7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40A6129023285E3D002BEC7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40C2C15A23368BE40083D128 /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
+		40C2C15C23368C440083D128 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		40C2C15E23368CD40083D128 /* CCHomeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCHomeDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,7 @@
 			children = (
 				409F0DB62335751400047FBA /* CCHomeDetailsView.xib */,
 				409F0DB82335752400047FBA /* CCHomeDetailsView.swift */,
+				40C2C15E23368CD40083D128 /* CCHomeDetailsViewController.swift */,
 				409F0DBA2335753300047FBA /* CCHomeDetailsViewModel.swift */,
 			);
 			path = Details;
@@ -123,6 +130,7 @@
 		409F0DBE2335780500047FBA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				40C2C15923368BD60083D128 /* General */,
 				409F0DBF2335781100047FBA /* View */,
 			);
 			path = Resources;
@@ -180,6 +188,15 @@
 				40065B5523286405004984CA /* HomeViewController.xib */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		40C2C15923368BD60083D128 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				40C2C15A23368BE40083D128 /* General.swift */,
+				40C2C15C23368C440083D128 /* Bundle.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +275,7 @@
 				4060DAD423330826001E859A /* CCTemperature.swift in Sources */,
 				40065B68232871F6004984CA /* CCTabBarViewController.swift in Sources */,
 				4060DAC62332FBF0001E859A /* CCTabs.swift in Sources */,
+				40C2C15F23368CD40083D128 /* CCHomeDetailsViewController.swift in Sources */,
 				409F0DC12335781900047FBA /* NibLoadable.swift in Sources */,
 				40065B5F23286773004984CA /* CCViewController.swift in Sources */,
 				4060DACD2333043F001E859A /* UINavigationBar.swift in Sources */,
@@ -268,10 +286,12 @@
 				409F0DB92335752400047FBA /* CCHomeDetailsView.swift in Sources */,
 				40065B6C2328739D004984CA /* String.swift in Sources */,
 				40A6128723285E3C002BEC7F /* ViewController.swift in Sources */,
+				40C2C15D23368C440083D128 /* Bundle.swift in Sources */,
 				40A6128523285E3C002BEC7F /* AppDelegate.swift in Sources */,
 				40065B5623286405004984CA /* HomeViewController.swift in Sources */,
 				4060DAD2233305F3001E859A /* CCMainWeather.swift in Sources */,
 				40065B6123286928004984CA /* CCViewModel.swift in Sources */,
+				40C2C15B23368BE40083D128 /* General.swift in Sources */,
 				40065B5923286411004984CA /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

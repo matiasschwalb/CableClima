@@ -17,6 +17,9 @@ class HomeViewController: CCViewController {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var detailsView: UIView!
     
+    
+    let detailsViewController: CCHomeDetailsViewController = CCHomeDetailsViewController()
+    
     let viewModel: HomeViewModel = HomeViewModel()
     
     override func viewDidLoad() {
@@ -34,7 +37,6 @@ class HomeViewController: CCViewController {
     }
     
     private func setupSubView() {
-        let detailsView = CCHomeDetailsView()
-        detailsView.addChild(detailsView)
+        load(childViewController: detailsViewController, into: detailsView)
     }
 }

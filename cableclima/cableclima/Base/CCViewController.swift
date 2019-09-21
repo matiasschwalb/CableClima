@@ -20,4 +20,7 @@ class CCViewController: UIViewController {
         view.backgroundColor = UIColor.ccCreamyWhite
     }
 
+    public func load(childViewController: CCViewController, into containerView: UIView) {
+        containerView.addSubview(childViewController.view)
+    }
 }

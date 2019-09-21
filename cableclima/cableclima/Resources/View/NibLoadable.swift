@@ -6,21 +6,57 @@
 //  Copyright © 2019 Matias David Schwalb. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
+/*
+ Represents an object which is loaded from a nib.
+ */
 public protocol NibLoadable {
-    static func nibNameAndBundle() -> (String, Bundle)
+    
+    /**
+     Name of Nib to load component from.
+     By default, the type's simple name.
+     */
+    static var nibName: String { get }
+    
+    /**
+     Bundle from where to load the nib.
+     By default, the main bundle;
+     except for classes, it defaults to the class' bundle.
+     */
+    static var nibBundle: Bundle { get }
+    
 }
 
-public extension NibLoadable where Self: UIViewController {
+public extension NibLoadable {
     
-    static func nibNameAndBundle() -> (String, Bundle) {
-        
-        let bundle = Bundle(for: Self.self)
-        
-        // note: nib file must have the same name as the view controller class
-        let nibName = (String(describing: type(of: self)) as NSString).components(separatedBy: ".").first!
-        
-        return (nibName, bundle)
+    public static var nibName: String {
+        return SimpleName(ofType: self)
     }
+    
+    public static var nibBundle: Bundle {
+        if let classSelf = self as? AnyClass {
+            return Bundle(for: classSelf.self)
+        }
+        return Bundle.main
+    }
+    
+    public static var nib: UINib {
+        return UINib(nibName: nibName, bundle: nibBundle)
+    }
+    
+    /**
+     Loads the nib for the specific component.
+     
+     - warning: This may through an ObjC NSException if there is no
+     nib with that name in that bundle.
+     - seealso: Bundle.loadNib(named:)
+     */
+    public static func loadFromNib<T>() -> T? {
+        return nibBundle.loadNib(named: nibName)
+    }
+    // Using generics because using Self makes it impossible to
+    //   provide default implementations for non-final classes.
+    
 }
