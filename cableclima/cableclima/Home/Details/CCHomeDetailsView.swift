@@ -10,4 +10,6 @@ import UIKit
 
 class CCHomeDetailsView: CCView, NibLoadable {
     
+    @IBOutlet weak var detailsTable: UITableView!
 }
+

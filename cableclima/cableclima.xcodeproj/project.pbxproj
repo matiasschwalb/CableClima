@@ -33,6 +33,8 @@
 		40C2C15B23368BE40083D128 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2C15A23368BE40083D128 /* General.swift */; };
 		40C2C15D23368C440083D128 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2C15C23368C440083D128 /* Bundle.swift */; };
 		40C2C15F23368CD40083D128 /* CCHomeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2C15E23368CD40083D128 /* CCHomeDetailsViewController.swift */; };
+		40C2C1672336FAFC0083D128 /* CCHomeDetailsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2C1652336FAFC0083D128 /* CCHomeDetailsViewCell.swift */; };
+		40C2C1682336FAFC0083D128 /* CCHomeDetailsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40C2C1662336FAFC0083D128 /* CCHomeDetailsViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		40C2C15A23368BE40083D128 /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
 		40C2C15C23368C440083D128 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		40C2C15E23368CD40083D128 /* CCHomeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCHomeDetailsViewController.swift; sourceTree = "<group>"; };
+		40C2C1652336FAFC0083D128 /* CCHomeDetailsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCHomeDetailsViewCell.swift; sourceTree = "<group>"; };
+		40C2C1662336FAFC0083D128 /* CCHomeDetailsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCHomeDetailsViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 		409F0DB1233574A400047FBA /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				40C2C1602336FA530083D128 /* Cell */,
 				409F0DB62335751400047FBA /* CCHomeDetailsView.xib */,
 				409F0DB82335752400047FBA /* CCHomeDetailsView.swift */,
 				40C2C15E23368CD40083D128 /* CCHomeDetailsViewController.swift */,
@@ -199,6 +204,15 @@
 			path = General;
 			sourceTree = "<group>";
 		};
+		40C2C1602336FA530083D128 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				40C2C1652336FAFC0083D128 /* CCHomeDetailsViewCell.swift */,
+				40C2C1662336FAFC0083D128 /* CCHomeDetailsViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -259,6 +273,7 @@
 			files = (
 				40A6128F23285E3D002BEC7F /* LaunchScreen.storyboard in Resources */,
 				40065B6A232872F8004984CA /* Localizable.strings in Resources */,
+				40C2C1682336FAFC0083D128 /* CCHomeDetailsViewCell.xib in Resources */,
 				40A6128C23285E3D002BEC7F /* Assets.xcassets in Resources */,
 				40065B5723286405004984CA /* HomeViewController.xib in Resources */,
 				409F0DB72335751400047FBA /* CCHomeDetailsView.xib in Resources */,
@@ -292,6 +307,7 @@
 				4060DAD2233305F3001E859A /* CCMainWeather.swift in Sources */,
 				40065B6123286928004984CA /* CCViewModel.swift in Sources */,
 				40C2C15B23368BE40083D128 /* General.swift in Sources */,
+				40C2C1672336FAFC0083D128 /* CCHomeDetailsViewCell.swift in Sources */,
 				40065B5923286411004984CA /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
