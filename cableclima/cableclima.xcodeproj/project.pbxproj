@@ -10,22 +10,64 @@
 		40065B5623286405004984CA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40065B5423286405004984CA /* HomeViewController.swift */; };
 		40065B5723286405004984CA /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40065B5523286405004984CA /* HomeViewController.xib */; };
 		40065B5923286411004984CA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40065B5823286411004984CA /* HomeViewModel.swift */; };
+		40065B5F23286773004984CA /* CCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40065B5E23286773004984CA /* CCViewController.swift */; };
+		40065B6123286928004984CA /* CCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40065B6023286928004984CA /* CCViewModel.swift */; };
+		40065B6523286DD8004984CA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40065B6423286DD8004984CA /* UIColor.swift */; };
+		40065B68232871F6004984CA /* CCTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40065B67232871F6004984CA /* CCTabBarViewController.swift */; };
+		40065B6A232872F8004984CA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40065B69232872F8004984CA /* Localizable.strings */; };
+		40065B6C2328739D004984CA /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40065B6B2328739D004984CA /* String.swift */; };
+		4060DAC62332FBF0001E859A /* CCTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060DAC52332FBF0001E859A /* CCTabs.swift */; };
+		4060DACD2333043F001E859A /* UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060DACC2333043F001E859A /* UINavigationBar.swift */; };
+		4060DACF23330538001E859A /* CCWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060DACE23330538001E859A /* CCWeather.swift */; };
+		4060DAD2233305F3001E859A /* CCMainWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060DAD1233305F3001E859A /* CCMainWeather.swift */; };
+		4060DAD423330826001E859A /* CCTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060DAD323330826001E859A /* CCTemperature.swift */; };
+		409F0DB72335751400047FBA /* CCHomeDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 409F0DB62335751400047FBA /* CCHomeDetailsView.xib */; };
+		409F0DB92335752400047FBA /* CCHomeDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409F0DB82335752400047FBA /* CCHomeDetailsView.swift */; };
+		409F0DBB2335753300047FBA /* CCHomeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409F0DBA2335753300047FBA /* CCHomeDetailsViewModel.swift */; };
+		409F0DBD2335758200047FBA /* CCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409F0DBC2335758200047FBA /* CCView.swift */; };
+		409F0DC12335781900047FBA /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409F0DC02335781900047FBA /* NibLoadable.swift */; };
 		40A6128523285E3C002BEC7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A6128423285E3C002BEC7F /* AppDelegate.swift */; };
 		40A6128723285E3C002BEC7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A6128623285E3C002BEC7F /* ViewController.swift */; };
 		40A6128C23285E3D002BEC7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A6128B23285E3D002BEC7F /* Assets.xcassets */; };
 		40A6128F23285E3D002BEC7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A6128D23285E3D002BEC7F /* LaunchScreen.storyboard */; };
+		40C2C15B23368BE40083D128 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2C15A23368BE40083D128 /* General.swift */; };
+		40C2C15D23368C440083D128 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2C15C23368C440083D128 /* Bundle.swift */; };
+		40C2C15F23368CD40083D128 /* CCHomeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2C15E23368CD40083D128 /* CCHomeDetailsViewController.swift */; };
+		40C2C1672336FAFC0083D128 /* CCHomeDetailsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2C1652336FAFC0083D128 /* CCHomeDetailsViewCell.swift */; };
+		40C2C1682336FAFC0083D128 /* CCHomeDetailsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40C2C1662336FAFC0083D128 /* CCHomeDetailsViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		40065B5423286405004984CA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		40065B5523286405004984CA /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		40065B5823286411004984CA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		40065B5E23286773004984CA /* CCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCViewController.swift; sourceTree = "<group>"; };
+		40065B6023286928004984CA /* CCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCViewModel.swift; sourceTree = "<group>"; };
+		40065B6423286DD8004984CA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		40065B67232871F6004984CA /* CCTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTabBarViewController.swift; sourceTree = "<group>"; };
+		40065B69232872F8004984CA /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		40065B6B2328739D004984CA /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		4060DAC52332FBF0001E859A /* CCTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTabs.swift; sourceTree = "<group>"; };
+		4060DACC2333043F001E859A /* UINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBar.swift; sourceTree = "<group>"; };
+		4060DACE23330538001E859A /* CCWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCWeather.swift; sourceTree = "<group>"; };
+		4060DAD1233305F3001E859A /* CCMainWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMainWeather.swift; sourceTree = "<group>"; };
+		4060DAD323330826001E859A /* CCTemperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTemperature.swift; sourceTree = "<group>"; };
+		409F0DB62335751400047FBA /* CCHomeDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCHomeDetailsView.xib; sourceTree = "<group>"; };
+		409F0DB82335752400047FBA /* CCHomeDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCHomeDetailsView.swift; sourceTree = "<group>"; };
+		409F0DBA2335753300047FBA /* CCHomeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCHomeDetailsViewModel.swift; sourceTree = "<group>"; };
+		409F0DBC2335758200047FBA /* CCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCView.swift; sourceTree = "<group>"; };
+		409F0DC02335781900047FBA /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		40A6128123285E3C002BEC7F /* cableclima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cableclima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A6128423285E3C002BEC7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40A6128623285E3C002BEC7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		40A6128B23285E3D002BEC7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40A6128E23285E3D002BEC7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40A6129023285E3D002BEC7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40C2C15A23368BE40083D128 /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
+		40C2C15C23368C440083D128 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		40C2C15E23368CD40083D128 /* CCHomeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCHomeDetailsViewController.swift; sourceTree = "<group>"; };
+		40C2C1652336FAFC0083D128 /* CCHomeDetailsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCHomeDetailsViewCell.swift; sourceTree = "<group>"; };
+		40C2C1662336FAFC0083D128 /* CCHomeDetailsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCHomeDetailsViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +81,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40065B5D23286763004984CA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				40065B5E23286773004984CA /* CCViewController.swift */,
+				40065B6023286928004984CA /* CCViewModel.swift */,
+				409F0DBC2335758200047FBA /* CCView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		40065B6323286DD0004984CA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				40065B6423286DD8004984CA /* UIColor.swift */,
+				40065B6B2328739D004984CA /* String.swift */,
+				4060DACC2333043F001E859A /* UINavigationBar.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		40065B662328718F004984CA /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				40065B67232871F6004984CA /* CCTabBarViewController.swift */,
+				4060DAC52332FBF0001E859A /* CCTabs.swift */,
+			);
+			path = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		4060DAD0233305E4001E859A /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				4060DACE23330538001E859A /* CCWeather.swift */,
+				4060DAD1233305F3001E859A /* CCMainWeather.swift */,
+				4060DAD323330826001E859A /* CCTemperature.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		409F0DB1233574A400047FBA /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				40C2C1602336FA530083D128 /* Cell */,
+				409F0DB62335751400047FBA /* CCHomeDetailsView.xib */,
+				409F0DB82335752400047FBA /* CCHomeDetailsView.swift */,
+				40C2C15E23368CD40083D128 /* CCHomeDetailsViewController.swift */,
+				409F0DBA2335753300047FBA /* CCHomeDetailsViewModel.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		409F0DBE2335780500047FBA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				40C2C15923368BD60083D128 /* General */,
+				409F0DBF2335781100047FBA /* View */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		409F0DBF2335781100047FBA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				409F0DC02335781900047FBA /* NibLoadable.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		40A6127823285E3C002BEC7F = {
 			isa = PBXGroup;
 			children = (
@@ -58,12 +168,18 @@
 		40A6128323285E3C002BEC7F /* cableclima */ = {
 			isa = PBXGroup;
 			children = (
+				409F0DBE2335780500047FBA /* Resources */,
+				4060DAD0233305E4001E859A /* Weather */,
+				40065B662328718F004984CA /* Tab Bar */,
+				40065B6323286DD0004984CA /* Extensions */,
+				40065B5D23286763004984CA /* Base */,
 				40A61296232863A6002BEC7F /* Home */,
 				40A6128423285E3C002BEC7F /* AppDelegate.swift */,
 				40A6128623285E3C002BEC7F /* ViewController.swift */,
 				40A6128B23285E3D002BEC7F /* Assets.xcassets */,
 				40A6128D23285E3D002BEC7F /* LaunchScreen.storyboard */,
 				40A6129023285E3D002BEC7F /* Info.plist */,
+				40065B69232872F8004984CA /* Localizable.strings */,
 			);
 			path = cableclima;
 			sourceTree = "<group>";
@@ -71,11 +187,30 @@
 		40A61296232863A6002BEC7F /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				409F0DB1233574A400047FBA /* Details */,
 				40065B5423286405004984CA /* HomeViewController.swift */,
 				40065B5823286411004984CA /* HomeViewModel.swift */,
 				40065B5523286405004984CA /* HomeViewController.xib */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		40C2C15923368BD60083D128 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				40C2C15A23368BE40083D128 /* General.swift */,
+				40C2C15C23368C440083D128 /* Bundle.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		40C2C1602336FA530083D128 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				40C2C1652336FAFC0083D128 /* CCHomeDetailsViewCell.swift */,
+				40C2C1662336FAFC0083D128 /* CCHomeDetailsViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				40A6128F23285E3D002BEC7F /* LaunchScreen.storyboard in Resources */,
+				40065B6A232872F8004984CA /* Localizable.strings in Resources */,
+				40C2C1682336FAFC0083D128 /* CCHomeDetailsViewCell.xib in Resources */,
 				40A6128C23285E3D002BEC7F /* Assets.xcassets in Resources */,
 				40065B5723286405004984CA /* HomeViewController.xib in Resources */,
+				409F0DB72335751400047FBA /* CCHomeDetailsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,9 +287,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4060DAD423330826001E859A /* CCTemperature.swift in Sources */,
+				40065B68232871F6004984CA /* CCTabBarViewController.swift in Sources */,
+				4060DAC62332FBF0001E859A /* CCTabs.swift in Sources */,
+				40C2C15F23368CD40083D128 /* CCHomeDetailsViewController.swift in Sources */,
+				409F0DC12335781900047FBA /* NibLoadable.swift in Sources */,
+				40065B5F23286773004984CA /* CCViewController.swift in Sources */,
+				4060DACD2333043F001E859A /* UINavigationBar.swift in Sources */,
+				409F0DBD2335758200047FBA /* CCView.swift in Sources */,
+				409F0DBB2335753300047FBA /* CCHomeDetailsViewModel.swift in Sources */,
+				4060DACF23330538001E859A /* CCWeather.swift in Sources */,
+				40065B6523286DD8004984CA /* UIColor.swift in Sources */,
+				409F0DB92335752400047FBA /* CCHomeDetailsView.swift in Sources */,
+				40065B6C2328739D004984CA /* String.swift in Sources */,
 				40A6128723285E3C002BEC7F /* ViewController.swift in Sources */,
+				40C2C15D23368C440083D128 /* Bundle.swift in Sources */,
 				40A6128523285E3C002BEC7F /* AppDelegate.swift in Sources */,
 				40065B5623286405004984CA /* HomeViewController.swift in Sources */,
+				4060DAD2233305F3001E859A /* CCMainWeather.swift in Sources */,
+				40065B6123286928004984CA /* CCViewModel.swift in Sources */,
+				40C2C15B23368BE40083D128 /* General.swift in Sources */,
+				40C2C1672336FAFC0083D128 /* CCHomeDetailsViewCell.swift in Sources */,
 				40065B5923286411004984CA /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
