@@ -26,6 +26,7 @@ class HomeViewController: CCViewController {
         super.viewDidLoad()
         setupUI()
         setupSubView()
+        loadData()
     }
     
     private func setupUI() {
@@ -38,5 +39,10 @@ class HomeViewController: CCViewController {
     
     private func setupSubView() {
         load(childViewController: detailsViewController, into: detailsView)
+    }
+    
+    private func loadData() {
+        let requestHandler = CurrentWeatherRequest()
+        requestHandler.loadCurrentWeather()
     }
 }

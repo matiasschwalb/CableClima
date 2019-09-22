@@ -46,6 +46,4 @@ extension CCHomeDetailsViewController: UITableViewDelegate, UITableViewDataSourc
         
         return cell
     }
-    
-    
 }
