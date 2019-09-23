@@ -1,0 +1,6 @@
+module Pods_cableclima {
+  umbrella header "Pods-cableclima-umbrella.h"
+
+  export *
+  module * { export * }
+}

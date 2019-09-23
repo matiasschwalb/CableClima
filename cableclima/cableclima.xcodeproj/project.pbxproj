@@ -23,7 +23,7 @@
 		4060DAD423330826001E859A /* CCTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060DAD323330826001E859A /* CCTemperature.swift */; };
 		4086E26F233830FC00B0C92C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4086E26E233830FC00B0C92C /* Configuration.swift */; };
 		4086E27523383AD600B0C92C /* Cities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4086E27423383AD600B0C92C /* Cities.swift */; };
-		4086E27823383B2000B0C92C /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4086E27723383B2000B0C92C /* General.swift */; };
+		4086E27823383B2000B0C92C /* GeneralParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4086E27723383B2000B0C92C /* GeneralParser.swift */; };
 		409F0DB72335751400047FBA /* CCHomeDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 409F0DB62335751400047FBA /* CCHomeDetailsView.xib */; };
 		409F0DB92335752400047FBA /* CCHomeDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409F0DB82335752400047FBA /* CCHomeDetailsView.swift */; };
 		409F0DBB2335753300047FBA /* CCHomeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409F0DBA2335753300047FBA /* CCHomeDetailsViewModel.swift */; };
@@ -39,59 +39,8 @@
 		40C2C1672336FAFC0083D128 /* CCHomeDetailsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2C1652336FAFC0083D128 /* CCHomeDetailsViewCell.swift */; };
 		40C2C1682336FAFC0083D128 /* CCHomeDetailsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40C2C1662336FAFC0083D128 /* CCHomeDetailsViewCell.xib */; };
 		40C2C1A12337EF7B0083D128 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2C1A02337EF7B0083D128 /* CurrentWeather.swift */; };
+		B31F930A975B184121198417 /* libPods-cableclima.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F96AA8061156A596C9D23B5A /* libPods-cableclima.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		40C2C1922337EF620083D128 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 40C2C1882337EF620083D128 /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
-			remoteInfo = "Alamofire iOS";
-		};
-		40C2C1942337EF620083D128 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 40C2C1882337EF620083D128 /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
-			remoteInfo = "Alamofire iOS Tests";
-		};
-		40C2C1962337EF620083D128 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 40C2C1882337EF620083D128 /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
-			remoteInfo = "Alamofire macOS";
-		};
-		40C2C1982337EF620083D128 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 40C2C1882337EF620083D128 /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
-			remoteInfo = "Alamofire macOS Tests";
-		};
-		40C2C19A2337EF620083D128 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 40C2C1882337EF620083D128 /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
-			remoteInfo = "Alamofire tvOS";
-		};
-		40C2C19C2337EF620083D128 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 40C2C1882337EF620083D128 /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
-			remoteInfo = "Alamofire tvOS Tests";
-		};
-		40C2C19E2337EF620083D128 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 40C2C1882337EF620083D128 /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E4202FE01B667AA100C997FB;
-			remoteInfo = "Alamofire watchOS";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		40C2C1862337EF090083D128 /* Embed Frameworks */ = {
@@ -107,6 +56,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3166679F9DC8E11ED2EAB296 /* Pods-cableclima.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cableclima.release.xcconfig"; path = "Target Support Files/Pods-cableclima/Pods-cableclima.release.xcconfig"; sourceTree = "<group>"; };
 		40065B5423286405004984CA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		40065B5523286405004984CA /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		40065B5823286411004984CA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -124,7 +74,7 @@
 		4086E26E233830FC00B0C92C /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		4086E2732338353E00B0C92C /* city.list.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = city.list.json; sourceTree = "<group>"; };
 		4086E27423383AD600B0C92C /* Cities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cities.swift; sourceTree = "<group>"; };
-		4086E27723383B2000B0C92C /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
+		4086E27723383B2000B0C92C /* GeneralParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralParser.swift; sourceTree = "<group>"; };
 		409F0DB62335751400047FBA /* CCHomeDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCHomeDetailsView.xib; sourceTree = "<group>"; };
 		409F0DB82335752400047FBA /* CCHomeDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCHomeDetailsView.swift; sourceTree = "<group>"; };
 		409F0DBA2335753300047FBA /* CCHomeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCHomeDetailsViewModel.swift; sourceTree = "<group>"; };
@@ -141,8 +91,9 @@
 		40C2C15E23368CD40083D128 /* CCHomeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCHomeDetailsViewController.swift; sourceTree = "<group>"; };
 		40C2C1652336FAFC0083D128 /* CCHomeDetailsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCHomeDetailsViewCell.swift; sourceTree = "<group>"; };
 		40C2C1662336FAFC0083D128 /* CCHomeDetailsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCHomeDetailsViewCell.xib; sourceTree = "<group>"; };
-		40C2C1882337EF620083D128 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
 		40C2C1A02337EF7B0083D128 /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		95599879B54098D677028EF1 /* Pods-cableclima.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cableclima.debug.xcconfig"; path = "Target Support Files/Pods-cableclima/Pods-cableclima.debug.xcconfig"; sourceTree = "<group>"; };
+		F96AA8061156A596C9D23B5A /* libPods-cableclima.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-cableclima.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B31F930A975B184121198417 /* libPods-cableclima.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				4086E27423383AD600B0C92C /* Cities.swift */,
-				4086E27723383B2000B0C92C /* General.swift */,
+				4086E27723383B2000B0C92C /* GeneralParser.swift */,
 			);
 			path = "JSON Parser";
 			sourceTree = "<group>";
@@ -247,9 +199,10 @@
 		40A6127823285E3C002BEC7F = {
 			isa = PBXGroup;
 			children = (
-				40C2C1872337EF5B0083D128 /* Frameworks */,
 				40A6128323285E3C002BEC7F /* cableclima */,
 				40A6128223285E3C002BEC7F /* Products */,
+				6621A71D6AA1103F404BA61D /* Pods */,
+				68B4A52BC8BBC3D60972D2DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -318,26 +271,21 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		40C2C1872337EF5B0083D128 /* Frameworks */ = {
+		6621A71D6AA1103F404BA61D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				40C2C1882337EF620083D128 /* Alamofire.xcodeproj */,
+				95599879B54098D677028EF1 /* Pods-cableclima.debug.xcconfig */,
+				3166679F9DC8E11ED2EAB296 /* Pods-cableclima.release.xcconfig */,
 			);
-			path = Frameworks;
+			path = Pods;
 			sourceTree = "<group>";
 		};
-		40C2C1892337EF620083D128 /* Products */ = {
+		68B4A52BC8BBC3D60972D2DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				40C2C1932337EF620083D128 /* Alamofire.framework */,
-				40C2C1952337EF620083D128 /* Alamofire iOS Tests.xctest */,
-				40C2C1972337EF620083D128 /* Alamofire.framework */,
-				40C2C1992337EF620083D128 /* Alamofire macOS Tests.xctest */,
-				40C2C19B2337EF620083D128 /* Alamofire.framework */,
-				40C2C19D2337EF620083D128 /* Alamofire tvOS Tests.xctest */,
-				40C2C19F2337EF620083D128 /* Alamofire.framework */,
+				F96AA8061156A596C9D23B5A /* libPods-cableclima.a */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +295,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40A6129323285E3D002BEC7F /* Build configuration list for PBXNativeTarget "cableclima" */;
 			buildPhases = (
+				1D6B9CDC280454FE17875BBF /* [CP] Check Pods Manifest.lock */,
 				40A6127D23285E3C002BEC7F /* Sources */,
 				40A6127E23285E3C002BEC7F /* Frameworks */,
 				40A6127F23285E3C002BEC7F /* Resources */,
@@ -387,70 +336,12 @@
 			mainGroup = 40A6127823285E3C002BEC7F;
 			productRefGroup = 40A6128223285E3C002BEC7F /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 40C2C1892337EF620083D128 /* Products */;
-					ProjectRef = 40C2C1882337EF620083D128 /* Alamofire.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				40A6128023285E3C002BEC7F /* cableclima */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		40C2C1932337EF620083D128 /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = 40C2C1922337EF620083D128 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		40C2C1952337EF620083D128 /* Alamofire iOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Alamofire iOS Tests.xctest";
-			remoteRef = 40C2C1942337EF620083D128 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		40C2C1972337EF620083D128 /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = 40C2C1962337EF620083D128 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		40C2C1992337EF620083D128 /* Alamofire macOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Alamofire macOS Tests.xctest";
-			remoteRef = 40C2C1982337EF620083D128 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		40C2C19B2337EF620083D128 /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = 40C2C19A2337EF620083D128 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		40C2C19D2337EF620083D128 /* Alamofire tvOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Alamofire tvOS Tests.xctest";
-			remoteRef = 40C2C19C2337EF620083D128 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		40C2C19F2337EF620083D128 /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = 40C2C19E2337EF620083D128 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		40A6127F23285E3C002BEC7F /* Resources */ = {
@@ -468,6 +359,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D6B9CDC280454FE17875BBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cableclima-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		40A6127D23285E3C002BEC7F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -481,7 +397,7 @@
 				40C2C1A12337EF7B0083D128 /* CurrentWeather.swift in Sources */,
 				409F0DC12335781900047FBA /* NibLoadable.swift in Sources */,
 				4086E26F233830FC00B0C92C /* Configuration.swift in Sources */,
-				4086E27823383B2000B0C92C /* General.swift in Sources */,
+				4086E27823383B2000B0C92C /* GeneralParser.swift in Sources */,
 				40065B5F23286773004984CA /* CCViewController.swift in Sources */,
 				4060DACD2333043F001E859A /* UINavigationBar.swift in Sources */,
 				409F0DBD2335758200047FBA /* CCView.swift in Sources */,
@@ -634,6 +550,7 @@
 		};
 		40A6129423285E3D002BEC7F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95599879B54098D677028EF1 /* Pods-cableclima.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -653,6 +570,7 @@
 		};
 		40A6129523285E3D002BEC7F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3166679F9DC8E11ED2EAB296 /* Pods-cableclima.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
