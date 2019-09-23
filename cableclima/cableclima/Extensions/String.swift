@@ -20,4 +20,8 @@ extension String {
         }
         return localized
     }
+    
+    public func addAPIKey() -> String {
+        return self + "&APPID=\(OpenWeatherConfiguration.APIKey)"
+    }
 }

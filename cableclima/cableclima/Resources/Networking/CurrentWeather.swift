@@ -11,10 +11,17 @@ import Alamofire
 
 class CurrentWeatherRequest {
     
-    func loadCurrentWeather() {
-        AF.request("https://api.openweathermap.org/data/2.5/weather?id=2172797").responseString { response in
+    typealias WeatherResult = (Result<String>) -> Void
+    
+    func loadCurrentWeather(withID id: Int, completion: @escaping WeatherResult) {
+        
+//        let url = OpenWeatherConfiguration.baseURL + "data/2.5/weather?q=London,uk".addAPIKey()
+        let url = OpenWeatherConfiguration.currentWeatherPathWithID(id: id)
+        
+        AF.request(url).responseString { response in
             print(">>>> Response >>>>")
-            print(response)
+            print(response.description)
+            completion(.success(response.description))
         }
     }
 }

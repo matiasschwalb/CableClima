@@ -43,6 +43,9 @@ class HomeViewController: CCViewController {
     
     private func loadData() {
         let requestHandler = CurrentWeatherRequest()
-        requestHandler.loadCurrentWeather()
+        requestHandler.loadCurrentWeather(withID: 3433955) { (result, error) in
+            print(result)
+            
+        }
     }
 }

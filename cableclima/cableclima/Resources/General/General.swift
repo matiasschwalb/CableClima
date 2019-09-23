@@ -8,6 +8,11 @@
 
 import Foundation
 
+enum Result<T> {
+    case success(T)
+    case error(String)
+}
+
 /**
  Returns the type's simple name.
  That is to say:
