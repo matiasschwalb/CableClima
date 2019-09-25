@@ -11,15 +11,33 @@ import UIKit
 
 class HomeViewModel: CCViewModel {
     
+    var onWeatherLoaded: ((CCWeather) -> Void)?
+    
     var weather: CCWeather?
     
     override init() {
         super.init()
+        setupBindings()
         loadWeather()
     }
     
     func loadWeather() {
-        self.weather = CCWeather(id: 1, type: .clear, pressure: 100, humidity: 100, currentTemperature: 24, maxTemperature: 30, minTemperature: 20, description: "Clear with no clouds", icon: UIImage(named: "weather"))
+        let requestHandler = CurrentWeatherRequest()
+        requestHandler.loadCurrentWeather(withID: 3433955) { result in
+
+            switch result {
+                case .success(let weatherResult):
+                    self.onWeatherLoaded?(weatherResult)
+                case .error(let description):
+                    print("Error in result: " + description)
+            }
+        }
+    }
+    
+    func setupBindings() {
+        onWeatherLoaded = { weather in
+            self.weather = weather
+        }
     }
     
     var backgroundColor: UIColor {

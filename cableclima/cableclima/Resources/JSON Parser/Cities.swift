@@ -58,17 +58,17 @@ class JSONCitiesParser {
 //            print("Error: path not found")
 //        }
         
-        if let url = Bundle.main.url(forResource: "city.list", withExtension: "json") {
-            do {
-                let data = try Data(contentsOf: url)
-                print(data)
-                let decoder = JSONDecoder()
-//                let jsonData = try decoder.decode(ResponseData.self, from: data)
-                let jsonData = try JSONSerialization.jsonObject(with: data) as! [[String: String]]
-                print(jsonData[2])
-            } catch {
-                print("Error: File not found!")
-            }
-        }
+//        if let url = Bundle.main.url(forResource: "city.list", withExtension: "json") {
+//            do {
+//                let data = try Data(contentsOf: url)
+//                print(data)
+//                let decoder = JSONDecoder()
+////                let jsonData = try decoder.decode(ResponseData.self, from: data)
+//                let jsonData = try JSONSerialization.jsonObject(with: data) as! [[String: String]]
+//                print(jsonData[2])
+//            } catch {
+//                print("Error: File not found!")
+//            }
+//        }
     }
 }

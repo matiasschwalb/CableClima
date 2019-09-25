@@ -24,12 +24,16 @@ class CCMainWeather {
     }
 }
 
-enum WeatherType {
-    case thunderstorm
-    case drizzle
-    case rain
-    case snow
-    case clear
-    case clouds
+enum WeatherType: String {
+    case thunderstorm = "Thunderstorm"
+    case drizzle = "Drizzle"
+    case rain = "Rain"
+    case snow = "Snow"
+    case clear = "Clear"
+    case clouds = "Clouds"
     case other
+    
+    init(fromRawValue: String) {
+        self = WeatherType(rawValue: fromRawValue) ?? .other
+    }
 }
