@@ -8,10 +8,10 @@
 
 import Foundation
 
-class JSONParser() {
+class JSONParser {
     
     func parse() {
         
-        let path =
+//        let path =
     }
 }

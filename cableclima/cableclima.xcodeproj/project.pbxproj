@@ -21,6 +21,7 @@
 		4060DACF23330538001E859A /* CCWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060DACE23330538001E859A /* CCWeather.swift */; };
 		4060DAD2233305F3001E859A /* CCMainWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060DAD1233305F3001E859A /* CCMainWeather.swift */; };
 		4060DAD423330826001E859A /* CCTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060DAD323330826001E859A /* CCTemperature.swift */; };
+		407CA94F23398EE70022C9D4 /* city.list.json in Resources */ = {isa = PBXBuildFile; fileRef = 4086E2732338353E00B0C92C /* city.list.json */; };
 		4086E26F233830FC00B0C92C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4086E26E233830FC00B0C92C /* Configuration.swift */; };
 		4086E27523383AD600B0C92C /* Cities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4086E27423383AD600B0C92C /* Cities.swift */; };
 		4086E27823383B2000B0C92C /* GeneralParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4086E27723383B2000B0C92C /* GeneralParser.swift */; };
@@ -353,6 +354,7 @@
 				40C2C1682336FAFC0083D128 /* CCHomeDetailsViewCell.xib in Resources */,
 				40A6128C23285E3D002BEC7F /* Assets.xcassets in Resources */,
 				40065B5723286405004984CA /* HomeViewController.xib in Resources */,
+				407CA94F23398EE70022C9D4 /* city.list.json in Resources */,
 				409F0DB72335751400047FBA /* CCHomeDetailsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

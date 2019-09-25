@@ -19,8 +19,8 @@ class CurrentWeatherRequest {
         let url = OpenWeatherConfiguration.currentWeatherPathWithID(id: id)
         
         AF.request(url).responseString { response in
-            print(">>>> Response >>>>")
-            print(response.description)
+//            print(">>>> Response >>>>")
+//            print(response.description)
             completion(.success(response.description))
         }
     }
