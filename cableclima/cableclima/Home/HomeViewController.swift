@@ -17,7 +17,6 @@ class HomeViewController: CCViewController {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var detailsView: UIView!
     
-    
     let detailsViewController: CCHomeDetailsViewController = CCHomeDetailsViewController()
     
     let viewModel: HomeViewModel = HomeViewModel()
@@ -27,6 +26,9 @@ class HomeViewController: CCViewController {
         setupUI()
         setupSubView()
         loadData()
+        viewModel.readyToRefresh = {
+            self.setupUI()
+        }
     }
     
     private func setupUI() {
@@ -34,7 +36,7 @@ class HomeViewController: CCViewController {
         view.backgroundColor = viewModel.backgroundColor
         
         currentTemperatureLabel.text = viewModel.currentTemperature.formattedTemperature()
-        
+        weatherImage.image = viewModel.icon
     }
     
     private func setupSubView() {

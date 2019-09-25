@@ -12,6 +12,7 @@ import UIKit
 class HomeViewModel: CCViewModel {
     
     var onWeatherLoaded: ((CCWeather) -> Void)?
+    var readyToRefresh: (() -> Void)?
     
     var weather: CCWeather?
     
@@ -28,6 +29,7 @@ class HomeViewModel: CCViewModel {
             switch result {
                 case .success(let weatherResult):
                     self.onWeatherLoaded?(weatherResult)
+                    self.readyToRefresh?()
                 case .error(let description):
                     print("Error in result: " + description)
             }

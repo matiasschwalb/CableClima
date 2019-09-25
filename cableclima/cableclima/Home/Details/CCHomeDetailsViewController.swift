@@ -13,6 +13,8 @@ class CCHomeDetailsViewController: CCViewController {
     
     lazy var _view: CCHomeDetailsView = CCHomeDetailsView.loadFromNib()!
     
+    let cells = ["Humedad", "Presion", "Temperatura Maxima", "Temperatura Minima", "Descripcion"]
+    
     override func loadView() {
         view = _view
     }
@@ -30,7 +32,7 @@ class CCHomeDetailsViewController: CCViewController {
 
 extension CCHomeDetailsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return cells.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -40,8 +42,9 @@ extension CCHomeDetailsViewController: UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CCHomeDetailsViewCell.xibFileName) as? CCHomeDetailsViewCell else { return UITableViewCell() }
         
-        cell.backgroundColor = UIColor.ccRed
-        cell.titleLabel.text = "Humedad"
+        let cellData = cells[indexPath.row]
+        
+        cell.titleLabel.text = cellData
         cell.valueLabel.text = "85%"
         
         return cell
