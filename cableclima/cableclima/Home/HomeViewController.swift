@@ -14,20 +14,18 @@ class HomeViewController: CCViewController {
     @IBOutlet weak var countryLabel: UILabel!
     @IBOutlet weak var weatherImage: UIImageView!
     @IBOutlet weak var currentTemperatureLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var weatherLabel: UILabel!
     @IBOutlet weak var detailsView: UIView!
-    
-    let detailsViewController: CCHomeDetailsViewController = CCHomeDetailsViewController()
     
     let viewModel: HomeViewModel = HomeViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        setupSubView()
         loadData()
         viewModel.readyToRefresh = {
             self.setupUI()
+            self.setupSubView()
         }
     }
     
@@ -37,9 +35,11 @@ class HomeViewController: CCViewController {
         
         currentTemperatureLabel.text = viewModel.currentTemperature.formattedTemperature()
         weatherImage.image = viewModel.icon
+        weatherLabel.text = viewModel.weather?.main?.type.stringValue
     }
     
     private func setupSubView() {
+        let detailsViewController = CCHomeDetailsViewController(withWeather: viewModel.weather ?? CCWeather())
         load(childViewController: detailsViewController, into: detailsView)
     }
     

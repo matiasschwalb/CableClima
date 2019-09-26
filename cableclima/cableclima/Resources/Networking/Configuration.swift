@@ -16,7 +16,9 @@ class OpenWeatherConfiguration {
     
     static let currentWeatherPath = "data/2.5/weather?"
     
+    static let metricSystemPath = "&units=metric"
+    
     static func currentWeatherPathWithID(id: Int) -> String {
-        return self.baseURL + self.currentWeatherPath + "id=\(id)".addAPIKey()
+        return self.baseURL + self.currentWeatherPath  + "id=\(id)" + self.metricSystemPath.addAPIKey()
     }
 }

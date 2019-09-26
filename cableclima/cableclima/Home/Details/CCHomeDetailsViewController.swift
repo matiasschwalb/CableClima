@@ -13,7 +13,16 @@ class CCHomeDetailsViewController: CCViewController {
     
     lazy var _view: CCHomeDetailsView = CCHomeDetailsView.loadFromNib()!
     
-    let cells = ["Humedad", "Presion", "Temperatura Maxima", "Temperatura Minima", "Descripcion"]
+    let viewModel: CCHomeDetailsViewModel
+    
+    init(withWeather weather: CCWeather) {
+        self.viewModel = CCHomeDetailsViewModel(withWeather: weather)
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func loadView() {
         view = _view
@@ -32,7 +41,7 @@ class CCHomeDetailsViewController: CCViewController {
 
 extension CCHomeDetailsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cells.count
+        return viewModel.cellViewModels.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -42,10 +51,10 @@ extension CCHomeDetailsViewController: UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CCHomeDetailsViewCell.xibFileName) as? CCHomeDetailsViewCell else { return UITableViewCell() }
         
-        let cellData = cells[indexPath.row]
+        let cellData = viewModel.cellViewModels[indexPath.row]
         
-        cell.titleLabel.text = cellData
-        cell.valueLabel.text = "85%"
+        cell.titleLabel.text = cellData.title
+        cell.valueLabel.text = cellData.value
         
         return cell
     }

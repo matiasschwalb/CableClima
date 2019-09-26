@@ -68,7 +68,7 @@ class HomeViewModel: CCViewModel {
     }
     
     var icon: UIImage {
-        return weather?.icon ?? UIImage()
+        return weather?.icon.image ?? UIImage()
     }
     
     var pressure: Int {

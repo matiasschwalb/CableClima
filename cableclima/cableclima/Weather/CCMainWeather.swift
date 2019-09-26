@@ -36,4 +36,9 @@ enum WeatherType: String {
     init(fromRawValue: String) {
         self = WeatherType(rawValue: fromRawValue) ?? .other
     }
+    
+    var stringValue: String {
+        return self.rawValue
+    }
+    
 }
