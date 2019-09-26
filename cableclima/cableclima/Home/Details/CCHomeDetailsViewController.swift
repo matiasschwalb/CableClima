@@ -13,13 +13,44 @@ class CCHomeDetailsViewController: CCViewController {
     
     lazy var _view: CCHomeDetailsView = CCHomeDetailsView.loadFromNib()!
     
+    let viewModel: CCHomeDetailsViewModel
+    
+    init(withWeather weather: CCWeather) {
+        self.viewModel = CCHomeDetailsViewModel(withWeather: weather)
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func loadView() {
+        setupDetailsTable()
+        setupView()
         view = _view
     }
     
+    
     override func viewDidLoad() {
         view.backgroundColor = UIColor.ccOrange
-
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        _view.detailsTable.reloadData()
+    }
+    
+    func setupView() {
+        _view.layer.cornerRadius = 10
+        _view.layer.masksToBounds = true
+        _view.backgroundColor = .clear
+        _view.layer.shadowColor = UIColor.darkGray.cgColor
+        _view.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        _view.layer.shadowOpacity = 1.0
+        _view.layer.shadowRadius = 2
+    }
+    
+    func setupDetailsTable() {
+        
         _view.detailsTable.delegate = self
         _view.detailsTable.dataSource = self
         
@@ -29,23 +60,23 @@ class CCHomeDetailsViewController: CCViewController {
 }
 
 extension CCHomeDetailsViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return viewModel.cellViewModels.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return _view.bounds.height / CGFloat(tableView.numberOfRows(inSection: 0))
+        return 80
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CCHomeDetailsViewCell.xibFileName) as? CCHomeDetailsViewCell else { return UITableViewCell() }
         
-        cell.backgroundColor = UIColor.ccRed
-        cell.titleLabel.text = "Humedad"
-        cell.valueLabel.text = "85%"
+        let cellData = viewModel.cellViewModels[indexPath.row]
+        
+        cell.titleLabel.text = cellData.title
+        cell.valueLabel.text = cellData.value
         
         return cell
     }
-    
-    
 }

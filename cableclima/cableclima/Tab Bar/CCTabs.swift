@@ -84,6 +84,8 @@ class CCTabs {
         switch type {
         case .home:
             viewController = HomeViewController()
+//        case .forecast:
+//            viewController = HomeViewController()
         default:
             viewController = CCViewController()
         }

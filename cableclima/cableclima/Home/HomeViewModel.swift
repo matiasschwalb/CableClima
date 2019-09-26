@@ -11,21 +11,56 @@ import UIKit
 
 class HomeViewModel: CCViewModel {
     
+    var onWeatherLoaded: ((CCWeather) -> Void)?
+    var readyToRefresh: (() -> Void)?
+    
     var weather: CCWeather?
     
     override init() {
         super.init()
+        setupBindings()
         loadWeather()
     }
     
-    func loadWeather() {
-        self.weather = CCWeather(id: 1, type: .clear, pressure: 100, humidity: 100, currentTemperature: 24, maxTemperature: 30, minTemperature: 20, description: "Clear with no clouds", icon: UIImage(named: "weather"))
+    func updateWeather() {
+        loadWeather()
+    }
+    
+    private func loadWeather() {
+        let requestHandler = CurrentWeatherRequest()
+        requestHandler.loadCurrentWeather(withID: 3433955) { result in
+//  This number is hardcoded, it's de Buenos Aires ID
+//  Download city list from http://bulk.openweathermap.org/sample/
+            switch result {
+                case .success(let weatherResult):
+                    self.onWeatherLoaded?(weatherResult)
+                    self.readyToRefresh?()
+                case .error(let description):
+                    print("Error in result: " + description)
+            }
+        }
+    }
+    
+    func setupBindings() {
+        onWeatherLoaded = { weather in
+            self.weather = weather
+        }
     }
     
     var backgroundColor: UIColor {
         switch type {
         case .clear:
             return UIColor.ccLightBlue
+        case .clouds:
+            return UIColor.ccCreamyWhite
+        case .drizzle:
+            return UIColor.lightGray
+        case .rain:
+            return UIColor.gray
+        case .snow:
+            return UIColor.white
+        case .thunderstorm:
+            return UIColor.yellow
         default:
             return UIColor.gray
         }
@@ -48,7 +83,7 @@ class HomeViewModel: CCViewModel {
     }
     
     var icon: UIImage {
-        return weather?.icon ?? UIImage()
+        return weather?.icon.image ?? UIImage()
     }
     
     var pressure: Int {

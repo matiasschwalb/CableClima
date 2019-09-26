@@ -10,15 +10,23 @@ import UIKit
 
 class CCWeather {
     
-    let id: Int
+    let id: Int?
     let main: CCMainWeather?
     let description: String?
-    let icon: UIImage?
+    let icon: WeatherIcon
     
-    init(id: Int, type: WeatherType?, pressure: Int?, humidity: Int?, currentTemperature: Float?, maxTemperature: Float?, minTemperature: Float?,  description: String?, icon: UIImage?) {
+    init() {
+        self.id = 0
+        self.main = CCMainWeather(type: .other, pressure: 0, humidity: 0, currentTemperature: 20, maxTemperature: 0, minTemperature: 0)
+        self.description = "null"
+        self.icon = WeatherIcon()
+    }
+    
+    init(id: Int, type: WeatherType?, pressure: Int?, humidity: Int?, currentTemperature: Float?, maxTemperature: Float?, minTemperature: Float?,  description: String?, icon: String?) {
         self.id = id
         self.main = CCMainWeather(type: type, pressure: pressure, humidity: humidity, currentTemperature: currentTemperature, maxTemperature: maxTemperature, minTemperature: minTemperature) 
         self.description = description
-        self.icon = icon
+        self.icon = WeatherIcon(withID: icon)
+        self.icon.fetchImage()
     }
 }
