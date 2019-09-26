@@ -29,7 +29,8 @@ class HomeViewModel: CCViewModel {
     private func loadWeather() {
         let requestHandler = CurrentWeatherRequest()
         requestHandler.loadCurrentWeather(withID: 3433955) { result in
-
+//  This number is hardcoded, it's de Buenos Aires ID
+//  Download city list from http://bulk.openweathermap.org/sample/
             switch result {
                 case .success(let weatherResult):
                     self.onWeatherLoaded?(weatherResult)
@@ -50,6 +51,16 @@ class HomeViewModel: CCViewModel {
         switch type {
         case .clear:
             return UIColor.ccLightBlue
+        case .clouds:
+            return UIColor.ccCreamyWhite
+        case .drizzle:
+            return UIColor.lightGray
+        case .rain:
+            return UIColor.gray
+        case .snow:
+            return UIColor.white
+        case .thunderstorm:
+            return UIColor.yellow
         default:
             return UIColor.gray
         }
