@@ -22,7 +22,11 @@ class HomeViewModel: CCViewModel {
         loadWeather()
     }
     
-    func loadWeather() {
+    func updateWeather() {
+        loadWeather()
+    }
+    
+    private func loadWeather() {
         let requestHandler = CurrentWeatherRequest()
         requestHandler.loadCurrentWeather(withID: 3433955) { result in
 

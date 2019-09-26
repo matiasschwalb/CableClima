@@ -12,7 +12,7 @@ class CCHomeDetailsViewModel: CCViewModel {
     let weather: CCWeather
     
     let cellViewModels: [CCHomeDetailsViewCellModel]
-        let cells = ["Humedad", "Presion", "Temperatura Maxima", "Temperatura Minima", "Descripcion"]
+
     init(withWeather weather: CCWeather) {
         self.weather = weather
         cellViewModels = [

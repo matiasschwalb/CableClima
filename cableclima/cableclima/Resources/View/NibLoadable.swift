@@ -35,14 +35,14 @@ public extension NibLoadable {
         return SimpleName(ofType: self)
     }
     
-    public static var nibBundle: Bundle {
+    static var nibBundle: Bundle {
         if let classSelf = self as? AnyClass {
             return Bundle(for: classSelf.self)
         }
         return Bundle.main
     }
     
-    public static var nib: UINib {
+    static var nib: UINib {
         return UINib(nibName: nibName, bundle: nibBundle)
     }
     
@@ -53,7 +53,7 @@ public extension NibLoadable {
      nib with that name in that bundle.
      - seealso: Bundle.loadNib(named:)
      */
-    public static func loadFromNib<T>() -> T? {
+    static func loadFromNib<T>() -> T? {
         return nibBundle.loadNib(named: nibName)
     }
     // Using generics because using Self makes it impossible to

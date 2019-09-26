@@ -25,12 +25,33 @@ class CCHomeDetailsViewController: CCViewController {
     }
     
     override func loadView() {
+        setupDetailsTable()
+        setupView()
         view = _view
     }
     
+    
     override func viewDidLoad() {
         view.backgroundColor = UIColor.ccOrange
-
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+//        setupDetailsTable()
+        _view.detailsTable.reloadData()
+    }
+    
+    func setupView() {
+        _view.layer.cornerRadius = 10
+        _view.layer.masksToBounds = true
+        _view.backgroundColor = .clear
+        _view.layer.shadowColor = UIColor.darkGray.cgColor
+        _view.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        _view.layer.shadowOpacity = 1.0
+        _view.layer.shadowRadius = 2
+    }
+    
+    func setupDetailsTable() {
+        
         _view.detailsTable.delegate = self
         _view.detailsTable.dataSource = self
         
@@ -40,12 +61,13 @@ class CCHomeDetailsViewController: CCViewController {
 }
 
 extension CCHomeDetailsViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.cellViewModels.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return _view.bounds.height / CGFloat(tableView.numberOfRows(inSection: 0))
+        return 80
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
