@@ -31,7 +31,7 @@ public protocol NibLoadable {
 
 public extension NibLoadable {
     
-    public static var nibName: String {
+    static var nibName: String {
         return SimpleName(ofType: self)
     }
     

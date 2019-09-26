@@ -36,7 +36,6 @@ class CCHomeDetailsViewController: CCViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-//        setupDetailsTable()
         _view.detailsTable.reloadData()
     }
     
