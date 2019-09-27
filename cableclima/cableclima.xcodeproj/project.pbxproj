@@ -20,6 +20,7 @@
 		4027F1A0233CE41A005144DF /* WeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4027F19F233CE41A005144DF /* WeatherIcon.swift */; };
 		4027F1A2233CE481005144DF /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4027F1A1233CE481005144DF /* Icon.swift */; };
 		4027F1A4233CE970005144DF /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4027F1A3233CE970005144DF /* UIImageView.swift */; };
+		4029A927233E8D8A00CD1D3A /* CCUnits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029A926233E8D8A00CD1D3A /* CCUnits.swift */; };
 		4060DAC62332FBF0001E859A /* CCTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060DAC52332FBF0001E859A /* CCTabs.swift */; };
 		4060DACD2333043F001E859A /* UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060DACC2333043F001E859A /* UINavigationBar.swift */; };
 		4060DACF23330538001E859A /* CCWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060DACE23330538001E859A /* CCWeather.swift */; };
@@ -72,6 +73,7 @@
 		4027F19F233CE41A005144DF /* WeatherIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherIcon.swift; sourceTree = "<group>"; };
 		4027F1A1233CE481005144DF /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		4027F1A3233CE970005144DF /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		4029A926233E8D8A00CD1D3A /* CCUnits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCUnits.swift; sourceTree = "<group>"; };
 		4060DAC52332FBF0001E859A /* CCTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTabs.swift; sourceTree = "<group>"; };
 		4060DACC2333043F001E859A /* UINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBar.swift; sourceTree = "<group>"; };
 		4060DACE23330538001E859A /* CCWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCWeather.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				4060DAD1233305F3001E859A /* CCMainWeather.swift */,
 				4060DAD323330826001E859A /* CCTemperature.swift */,
 				4027F19F233CE41A005144DF /* WeatherIcon.swift */,
+				4029A926233E8D8A00CD1D3A /* CCUnits.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				4086E26F233830FC00B0C92C /* Configuration.swift in Sources */,
 				40065B5F23286773004984CA /* CCViewController.swift in Sources */,
 				4060DACD2333043F001E859A /* UINavigationBar.swift in Sources */,
+				4029A927233E8D8A00CD1D3A /* CCUnits.swift in Sources */,
 				409F0DBD2335758200047FBA /* CCView.swift in Sources */,
 				409F0DBB2335753300047FBA /* CCHomeDetailsViewModel.swift in Sources */,
 				4027F1A4233CE970005144DF /* UIImageView.swift in Sources */,

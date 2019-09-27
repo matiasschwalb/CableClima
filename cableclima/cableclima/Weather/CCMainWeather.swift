@@ -22,6 +22,14 @@ class CCMainWeather {
                                                  max: maxTemperature ?? 0,
                                                  min: minTemperature ?? 0)
     }
+    
+    func pressureWithUnits() -> String {
+        return String(pressure) + CCUnits.pressureUnits
+    }
+    
+    func humidityWithUnits() -> String {
+        return String(humidity) + CCUnits.humidityUnits
+    }
 }
 
 enum WeatherType: String {

@@ -16,10 +16,10 @@ class CCHomeDetailsViewModel: CCViewModel {
     init(withWeather weather: CCWeather) {
         self.weather = weather
         cellViewModels = [
-            CCHomeDetailsViewCellModel(title: "Humedad", value: String(weather.main?.humidity ?? 0) ),
-            CCHomeDetailsViewCellModel(title: "Presion", value: String(weather.main?.pressure ?? 0)),
-            CCHomeDetailsViewCellModel(title: "Temperatura Maxima", value: String(weather.main?.temperatureList.max.value ?? 0)),
-            CCHomeDetailsViewCellModel(title: "Temperatura Minima", value: String(weather.main?.temperatureList.min.value ?? 0)),
+            CCHomeDetailsViewCellModel(title: "Humedad", value: weather.main?.humidityWithUnits() ?? ""),
+            CCHomeDetailsViewCellModel(title: "Presion", value: weather.main?.pressureWithUnits() ?? ""),
+            CCHomeDetailsViewCellModel(title: "Temperatura Maxima", value: weather.main?.temperatureList.max.formattedTemperature() ?? ""),
+            CCHomeDetailsViewCellModel(title: "Temperatura Minima", value: weather.main?.temperatureList.min.formattedTemperature() ?? ""),
             CCHomeDetailsViewCellModel(title: "Descripcion", value: weather.description ?? "")
         ]
     }
