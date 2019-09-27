@@ -4,3 +4,5 @@
 "tab_bar.forecast.title" = "Pronostico";
 "tab_bar.cities.title" = "Ciudades";
 "tab_bar.settings.title" = "Configuración";
+
+"error_title" = "Error";

@@ -13,6 +13,7 @@ class HomeViewModel: CCViewModel {
     
     var onWeatherLoaded: ((CCWeather) -> Void)?
     var readyToRefresh: (() -> Void)?
+    var onWeatherError: ((String) -> Void)?
     
     var weather: CCWeather?
     
@@ -32,6 +33,7 @@ class HomeViewModel: CCViewModel {
                     self.readyToRefresh?()
                 case .error(let description):
                     print("Error in result: " + description)
+                    self.onWeatherError?(description)
             }
         }
     }

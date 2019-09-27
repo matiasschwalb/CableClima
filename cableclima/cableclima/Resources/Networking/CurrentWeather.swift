@@ -40,7 +40,17 @@ class CurrentWeatherRequest {
             let icon = json["weather"][0]["icon"].string
             let city = json["name"].string
             
+            let errorCode = json["cod"].string
+            let message = json["message"].string
+            
+
+            
             let weather = CCWeather(id: id ?? 0, type: WeatherType(fromRawValue: type ?? ""), pressure: pressure, humidity: humidity, currentTemperature: currentTemperature, maxTemperature: maxTemperature, minTemperature: minTemperature, description: description, icon: icon, city: city)
+
+            
+            if message == "city not found" {
+                completion(.error(message ?? ""))
+            }
             
             completion(.success(weather))
         }

@@ -29,6 +29,13 @@ class HomeViewController: CCViewController {
             self.setupUI()
             self.setupSubView()
         }
+        
+        viewModel.onWeatherError = { description in
+            
+            let alert = UIAlertController(title: "error_title".localized(), message: description, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
