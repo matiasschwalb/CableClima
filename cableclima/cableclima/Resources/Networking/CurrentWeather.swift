@@ -47,9 +47,9 @@ class CurrentWeatherRequest {
             
             let weather = CCWeather(id: id ?? 0, type: WeatherType(fromRawValue: type ?? ""), pressure: pressure, humidity: humidity, currentTemperature: currentTemperature, maxTemperature: maxTemperature, minTemperature: minTemperature, description: description, icon: icon, city: city)
 
-            
-            if message == "city not found" {
-                completion(.error(message ?? ""))
+            if let message = message,
+                let errorCode = errorCode {
+                completion(.error(errorCode + ":" + message))
             }
             
             completion(.success(weather))
