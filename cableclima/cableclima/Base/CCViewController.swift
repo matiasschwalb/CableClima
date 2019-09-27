@@ -12,6 +12,7 @@ class CCViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardWhenTappedAround()
         setupCustomView()
     }
     
@@ -21,5 +22,15 @@ class CCViewController: UIViewController {
 
     public func load(childViewController: CCViewController, into containerView: UIView) {
         containerView.addSubview(childViewController.view)
+    }
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(CCViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

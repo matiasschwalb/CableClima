@@ -13,6 +13,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="cableclima" customModuleProvider="target">
             <connections>
                 <outlet property="cityLabel" destination="IBd-2c-y1d" id="4zl-W2-Yre"/>
+                <outlet property="countryCodeButton" destination="Bwb-x2-hL3" id="7Qx-yy-ENQ"/>
+                <outlet property="countryCodeTextView" destination="x2V-ka-AKq" id="AoS-sp-MSu"/>
                 <outlet property="currentTemperatureLabel" destination="uwI-Bc-eYw" id="G6y-q0-0SX"/>
                 <outlet property="detailsView" destination="9d8-Az-HBU" id="yru-cZ-KUf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -58,6 +60,16 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bwb-x2-hL3">
+                    <rect key="frame" x="320" y="51" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x2V-ka-AKq">
+                    <rect key="frame" x="20" y="52" width="292" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -72,7 +84,12 @@
                 <constraint firstItem="9d8-Az-HBU" firstAttribute="top" secondItem="RqX-4x-a6l" secondAttribute="bottom" constant="40" id="OXz-Ce-hLn"/>
                 <constraint firstItem="uwI-Bc-eYw" firstAttribute="leading" secondItem="RqX-4x-a6l" secondAttribute="trailing" constant="15" id="RAX-bw-Npi"/>
                 <constraint firstItem="9d8-Az-HBU" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="VU7-uq-EoA"/>
+                <constraint firstItem="Bwb-x2-hL3" firstAttribute="firstBaseline" secondItem="x2V-ka-AKq" secondAttribute="firstBaseline" id="ax1-r3-l70"/>
+                <constraint firstItem="Bwb-x2-hL3" firstAttribute="leading" secondItem="x2V-ka-AKq" secondAttribute="trailing" constant="8" id="lG8-Ft-zD5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="x2V-ka-AKq" secondAttribute="trailing" constant="102" id="nEj-bt-M1c"/>
+                <constraint firstItem="x2V-ka-AKq" firstAttribute="leading" secondItem="IBd-2c-y1d" secondAttribute="leading" id="p0U-NT-Lb3"/>
                 <constraint firstItem="IBd-2c-y1d" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="wO3-X3-Tp3"/>
+                <constraint firstItem="x2V-ka-AKq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="wZn-VO-awK"/>
                 <constraint firstItem="9d8-Az-HBU" firstAttribute="top" secondItem="JnC-F8-iFK" secondAttribute="bottom" constant="63" id="xfa-yZ-FPb"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IBd-2c-y1d" secondAttribute="trailing" constant="20" id="y1L-KW-XXv"/>
                 <constraint firstItem="RqX-4x-a6l" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="43" id="yQf-qc-l9x"/>

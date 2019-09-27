@@ -15,11 +15,15 @@ class HomeViewController: CCViewController {
     @IBOutlet weak var currentTemperatureLabel: UILabel!
     @IBOutlet weak var weatherLabel: UILabel!
     @IBOutlet weak var detailsView: UIView!
+    @IBOutlet weak var countryCodeTextView: UITextField!
+    @IBOutlet weak var countryCodeButton: UIButton!
     
     var viewModel: HomeViewModel = HomeViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupButton()
+        setupTextView()
         setupUI()
         viewModel.readyToRefresh = {
             self.setupUI()
@@ -28,8 +32,29 @@ class HomeViewController: CCViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        viewModel.updateWeather()
+//        viewModel.updateWeather()
         setupUI()
+    }
+    
+    private func setupTextView() {
+        countryCodeTextView.keyboardType = .asciiCapableNumberPad
+    }
+    
+    private func setupButton() {
+        countryCodeButton.backgroundColor = UIColor.ccOrange
+        countryCodeButton.tintColor = UIColor.white
+        countryCodeButton.layer.cornerRadius = 8
+//        countryCodeButton.titleLabel?.text = "Go"
+        countryCodeButton.setTitle("Go", for: .normal)
+        
+        countryCodeButton.addTarget(self, action: #selector(self.buttonClick), for: .touchUpInside)
+//        countryCodeButton.
+    }
+    
+    @objc func buttonClick(sender: UIButton!) {
+        guard let id = countryCodeTextView.text else { return }
+        view.endEditing(true)
+        viewModel.loadWeather(forID: id)
     }
     
     private func setupUI() {

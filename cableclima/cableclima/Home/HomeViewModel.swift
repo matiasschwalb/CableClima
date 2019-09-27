@@ -19,17 +19,12 @@ class HomeViewModel: CCViewModel {
     override init() {
         super.init()
         setupBindings()
-        loadWeather()
+//        loadWeather(forID: )
     }
-    
-    func updateWeather() {
-        loadWeather()
-    }
-    
-    private func loadWeather() {
+
+    func loadWeather(forID id: String) {
         let requestHandler = CurrentWeatherRequest()
-        requestHandler.loadCurrentWeather(withID: 3433955) { result in
-//  This number is hardcoded, it's de Buenos Aires ID
+        requestHandler.loadCurrentWeather(withID: Int(id) ?? 0) { result in
 //  Download city list from http://bulk.openweathermap.org/sample/
             switch result {
                 case .success(let weatherResult):
