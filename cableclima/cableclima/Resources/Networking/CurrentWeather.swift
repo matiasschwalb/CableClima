@@ -27,6 +27,8 @@ class CurrentWeatherRequest {
             
             let json = JSON(jsonData)
             
+            print(json)
+            
             let id = json["id"].int
             let type = json["weather"][0]["main"].string
             let pressure = json["main"]["pressure"].int
@@ -36,8 +38,9 @@ class CurrentWeatherRequest {
             let minTemperature = json["main"]["temp_min"].float
             let description = json["weather"][0]["description"].string
             let icon = json["weather"][0]["icon"].string
+            let city = json["name"].string
             
-            let weather = CCWeather(id: id ?? 0, type: WeatherType(fromRawValue: type ?? ""), pressure: pressure, humidity: humidity, currentTemperature: currentTemperature, maxTemperature: maxTemperature, minTemperature: minTemperature, description: description, icon: icon)
+            let weather = CCWeather(id: id ?? 0, type: WeatherType(fromRawValue: type ?? ""), pressure: pressure, humidity: humidity, currentTemperature: currentTemperature, maxTemperature: maxTemperature, minTemperature: minTemperature, description: description, icon: icon, city: city)
             
             completion(.success(weather))
         }

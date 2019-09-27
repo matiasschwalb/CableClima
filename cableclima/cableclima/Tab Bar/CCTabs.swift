@@ -31,8 +31,6 @@ class CCTabs {
             return UIImage(named: "map")
         case .settings:
             return UIImage(named: "settings")
-        default:
-            return UIImage()
         }
     }
     
@@ -46,8 +44,6 @@ class CCTabs {
             return UIImage(named: "map-filled")
         case .settings:
             return UIImage(named: "settings-filled")
-        default:
-            return UIImage()
         }
     }
     
@@ -61,8 +57,6 @@ class CCTabs {
             return "tab_bar.cities.title".localized()
         case .settings:
             return "tab_bar.settings.title".localized()
-        default:
-            return nil
         }
     }
     

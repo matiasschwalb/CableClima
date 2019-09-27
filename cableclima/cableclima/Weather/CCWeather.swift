@@ -14,19 +14,22 @@ class CCWeather {
     let main: CCMainWeather?
     let description: String?
     let icon: WeatherIcon
+    let city: String?
     
     init() {
         self.id = 0
         self.main = CCMainWeather(type: .other, pressure: 0, humidity: 0, currentTemperature: 20, maxTemperature: 0, minTemperature: 0)
         self.description = "null"
         self.icon = WeatherIcon()
+        self.city = ""
     }
     
-    init(id: Int, type: WeatherType?, pressure: Int?, humidity: Int?, currentTemperature: Float?, maxTemperature: Float?, minTemperature: Float?,  description: String?, icon: String?) {
+    init(id: Int, type: WeatherType?, pressure: Int?, humidity: Int?, currentTemperature: Float?, maxTemperature: Float?, minTemperature: Float?,  description: String?, icon: String?, city: String?) {
         self.id = id
         self.main = CCMainWeather(type: type, pressure: pressure, humidity: humidity, currentTemperature: currentTemperature, maxTemperature: maxTemperature, minTemperature: minTemperature) 
         self.description = description
         self.icon = WeatherIcon(withID: icon)
         self.icon.fetchImage()
+        self.city = city
     }
 }

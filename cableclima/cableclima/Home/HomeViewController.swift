@@ -11,14 +11,12 @@ import UIKit
 class HomeViewController: CCViewController {
 
     @IBOutlet weak var cityLabel: UILabel!
-    @IBOutlet weak var countryLabel: UILabel!
     @IBOutlet weak var weatherImage: UIImageView!
     @IBOutlet weak var currentTemperatureLabel: UILabel!
     @IBOutlet weak var weatherLabel: UILabel!
     @IBOutlet weak var detailsView: UIView!
     
     var viewModel: HomeViewModel = HomeViewModel()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +37,8 @@ class HomeViewController: CCViewController {
         currentTemperatureLabel.text = viewModel.currentTemperature.formattedTemperature()
         weatherImage.image = viewModel.icon
         weatherLabel.text = viewModel.weather?.main?.type.stringValue
+        cityLabel.text = viewModel.city
+        cityLabel.adjustsFontSizeToFitWidth = true
     }
     
     private func setupSubView() {

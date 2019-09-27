@@ -66,6 +66,10 @@ class HomeViewModel: CCViewModel {
         }
     }
     
+    var city: String {
+        return weather?.city ?? ""
+    }
+    
     var type: WeatherType {
         return weather?.main?.type ?? WeatherType.other
     }
