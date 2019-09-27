@@ -11,11 +11,9 @@ import Alamofire
 
 class IconRequest {
     func getIcon(withIconID id: String) -> UIImage{
-        guard let url = URL(string: "https://openweathermap.org/img/wn/10d@2x.png") else { return UIImage() }
+        guard let url = URL(string: "https://openweathermap.org/img/wn/\(id)@2x.png") else { return UIImage() }
         
         guard let data = try? Data(contentsOf: url) else { return UIImage() }
-        
-        guard let image = UIImage(data: data) else { return UIImage() }
         
         return UIImage(data: data) ?? UIImage()
     }
